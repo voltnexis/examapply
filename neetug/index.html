@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEET UG 2026: Application Essentials</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen">
+
+    <!-- Header Section (Dark Theme) -->
+    <header class="bg-teal-700 shadow-xl p-4 sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl sm:text-2xl font-extrabold text-white">
+                NEET UG 2026 Application Guide
+            </h1>
+            <nav>
+                <a href="#eligibility" class="text-white hover:text-teal-200 transition duration-300 text-sm sm:text-base ml-4">Eligibility</a>
+                <a href="#documents" class="text-white hover:text-teal-200 transition duration-300 text-sm sm:text-base ml-4">Documents</a>
+                <a href="#steps" class="text-white hover:text-teal-200 transition duration-300 text-sm sm:text-base ml-4 hidden sm:inline-block">Apply Steps</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+        
+        <!-- Welcome & Introduction -->
+        <section class="mb-10 text-center bg-white p-6 rounded-xl card border-t-4 border-teal-500">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-2">
+                Your Roadmap to the NEET UG Application
+            </h2>
+            <p class="text-lg text-gray-600">
+                A simple breakdown of all the steps, documents, and rules required for your successful NEET UG 2026 registration.
+            </p>
+        </section>
+
+        <!-- Application Status & Link (EASILY MODIFIABLE) -->
+        <div class="text-center mb-10">
+            <!-- IMPORTANT: Status block for when registration is CLOSED -->
+            <div id="status-closed" class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-6 rounded-xl shadow-md">
+                <h3 class="text-2xl font-bold mb-2">
+                    <span class="text-red-600">REGISTRATION STATUS:</span> NOT YET OPEN
+                </h3>
+                <p class="text-lg mb-4">
+                    The National Testing Agency (NTA) has not yet activated the registration portal for NEET UG 2026.
+                </p>
+                <!-- Placeholder Link - Replace this URL when the application starts -->
+                <a href="#" id="application-link"
+                   class="inline-block px-8 py-3 text-lg font-bold text-white bg-gray-500 rounded-lg 
+                          cursor-not-allowed opacity-75">
+                    Link Will Be Here When Live
+                </a>
+                <p class="mt-2 text-sm">
+                    <strong class="font-bold">Action Required:</strong> Keep checking the official NTA website (`nta.ac.in` or `neet.nta.nic.in`) for updates.
+                </p>
+            </div>
+
+            <!-- 
+            TO CHANGE TO LIVE STATUS:
+            1. Change the content in the 'status-closed' div to a green background and a live button.
+            2. Update the href in the 'application-link' anchor tag.
+            Example of LIVE button (use this to replace the content above):
+            <div id="status-live" class="bg-green-100 border-l-4 border-green-500 text-green-800 p-6 rounded-xl shadow-md">
+                <h3 class="text-2xl font-bold mb-2">
+                    <span class="text-green-600">REGISTRATION STATUS:</span> LIVE NOW!
+                </h3>
+                <p class="text-lg mb-4">
+                    The registration portal is officially open. Click below to begin your application immediately.
+                </p>
+                <a href="[PASTE_LIVE_LINK_HERE]" target="_blank" id="application-link"
+                   class="inline-block px-12 py-4 text-xl font-bold text-white bg-green-600 rounded-full shadow-lg 
+                          hover:bg-green-700 transition duration-300 transform hover:scale-105 
+                          focus:outline-none focus:ring-4 focus:ring-green-300">
+                    Go to Official NTA Application Page
+                </a>
+            </div>
+            -->
+        </div>
+        <!-- END Application Status & Link -->
+        
+        <div class="grid lg:grid-cols-3 gap-8 mb-10">
+            <!-- Video Tutorial Section -->
+            <section id="tutorial" class="lg:col-span-2">
+                 <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <svg class="w-7 h-7 text-red-600 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.615 3.184c-3.604-1.342-7.149-1.342-10.753 0-2.43 0-3.645.748-4.86 2.244C2.793 6.924 2 9.08 2 12c0 2.92.793 5.076 2 6.572 1.215 1.496 2.43 2.244 4.86 2.244 3.604 0 7.149 0 10.753 0 2.43 0 3.645-.748 4.86-2.244C21.207 17.076 22 14.92 22 12c0-2.92-.793-5.076-2-6.572-1.215-1.496-2.43-2.244-4.86-2.244zm-9.317 12.593v-7.534l5.341 3.767-5.341 3.767z"></path></svg>
+                    Video Guide: Form Filling Steps
+                </h2>
+                <div class="bg-white p-5 rounded-xl card border-l-4 border-red-400">
+                    <p class="text-gray-700 mb-3">
+                        Watch this detailed video, based on previous years, to understand the exact sequence and required fields for the NEET application.
+                    </p>
+                    <a href="http://www.youtube.com/watch?v=wVoGOivAkus" target="_blank" 
+                       class="inline-flex items-center text-blue-700 hover:text-blue-900 font-semibold transition duration-300">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                        How to fill NEET 2025 Application Form | Step by Step
+                    </a>
+                </div>
+            </section>
+            
+            <!-- Fee Snapshot -->
+            <section id="cost" class="lg:col-span-1">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                    <svg class="w-7 h-7 text-teal-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m4 2h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    Application Fee (Approx.)
+                </h2>
+                
+                <div class="bg-teal-50 p-5 rounded-xl card">
+                    <p class="text-sm italic text-gray-600 mb-3">*Based on previous year data.</p>
+                    <ul class="space-y-3 font-medium">
+                        <li class="flex justify-between items-center text-gray-800">
+                            <span>General / OBC / EWS (India)</span>
+                            <span class="text-lg font-extrabold text-teal-600">₹1700</span>
+                        </li>
+                        <li class="flex justify-between items-center text-gray-800">
+                            <span>SC / ST / PwD / Transgender</span>
+                            <span class="text-lg font-extrabold text-green-600">₹1000</span>
+                        </li>
+                        <li class="flex justify-between items-center text-gray-800">
+                            <span>Outside India</span>
+                            <span class="text-lg font-extrabold text-indigo-600">₹9500</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- 1. Eligibility Section -->
+        <section id="eligibility" class="mb-10">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <svg class="w-8 h-8 text-teal-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 4.04A12.02 12.02 0 005 21h14a12.02 12.02 0 001.618-14.016z"></path></svg>
+                1. Eligibility Checklist
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Age Limit -->
+                <div class="bg-white p-6 rounded-xl card border-t-4 border-yellow-500">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Age Criteria</h3>
+                    <ul class="space-y-3 text-gray-600 list-disc list-inside ml-4">
+                        <li>You must be at least <strong class="font-semibold">17 years old</strong> as of December 31st of the exam year (2026).</li>
+                        <li>There is <strong class="font-semibold">no upper age limit</strong> for the examination.</li>
+                    </ul>
+                </div>
+                
+                <!-- Qualification & Attempts -->
+                <div class="bg-white p-6 rounded-xl card border-t-4 border-teal-500">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Academic Qualification</h3>
+                    <ul class="space-y-3 text-gray-600 list-disc list-inside ml-4">
+                        <li>Must have <strong class="font-semibold">passed Class 12</strong> or equivalent.</li>
+                        <li>Students appearing in Class 12 in 2026 are also eligible.</li>
+                        <li>There is <strong class="font-semibold">no limit</strong> on the number of attempts.</li>
+                    </ul>
+                </div>
+
+                <!-- Subject Requirements -->
+                <div class="bg-white p-6 rounded-xl card border-t-4 border-indigo-500">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Mandatory Subjects & Marks</h3>
+                    <ul class="space-y-3 text-gray-600 list-disc list-inside ml-4">
+                        <li>Must have studied <strong class="font-semibold">Physics, Chemistry, and Biology/Biotechnology</strong> in Class 12.</li>
+                        <li><strong class="font-semibold">Minimum Aggregate Marks</strong> (P, C, B/Bt) are:
+                            <ul>
+                                <li><strong class="font-semibold">50%</strong> for General/EWS</li>
+                                <li><strong class="font-semibold">40%</strong> for SC/ST/OBC (NCL)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 2. Documents Required Section -->
+        <section id="documents" class="mb-10">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <svg class="w-8 h-8 text-teal-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                2. Documents to Keep Ready (Scanned)
+            </h2>
+
+            <div class="bg-white p-6 rounded-xl card">
+                <p class="text-lg text-gray-700 mb-4">
+                    Ensure these documents meet the specifications for upload.
+                </p>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-teal-50">
+                            <tr>
+                                <th class="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Item</th>
+                                <th class="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Format</th>
+                                <th class="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Size Range</th>
+                                <th class="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200 text-sm sm:text-base">
+                            <tr>
+                                <td class="px-3 py-4 whitespace-nowrap font-medium">Passport Size Photograph</td>
+                                <td class="px-3 py-4 whitespace-nowrap text-teal-600">JPG</td>
+                                <td class="px-3 py-4 whitespace-nowrap">10 KB - 200 KB</td>
+                                <td class="px-3 py-4">80% face visible, white background.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-4 whitespace-nowrap font-medium">Post Card Size Photograph</td>
+                                <td class="px-3 py-4 whitespace-nowrap text-teal-600">JPG</td>
+                                <td class="px-3 py-4 whitespace-nowrap">10 KB - 200 KB</td>
+                                <td class="px-3 py-4">4" x 6" size, with white background.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-4 whitespace-nowrap font-medium">Candidate Signature</td>
+                                <td class="px-3 py-4 whitespace-nowrap text-teal-600">JPG</td>
+                                <td class="px-3 py-4 whitespace-nowrap">4 KB - 30 KB</td>
+                                <td class="px-3 py-4">Signed on white paper in black ink.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-4 whitespace-nowrap font-medium">Left & Right Hand Fingers/Thumb Impression</td>
+                                <td class="px-3 py-4 whitespace-nowrap text-teal-600">JPG</td>
+                                <td class="px-3 py-4 whitespace-nowrap">10 KB - 200 KB</td>
+                                <td class="px-3 py-4">Clear impression on white paper.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-4 whitespace-nowrap font-medium">Class 10 Certificate</td>
+                                <td class="px-3 py-4 whitespace-nowrap text-teal-600">PDF</td>
+                                <td class="px-3 py-4 whitespace-nowrap">50 KB - 300 KB</td>
+                                <td class="px-3 py-4">Proof of Date of Birth.</td>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-4 whitespace-nowrap font-medium">Category / PwD Certificate</td>
+                                <td class="px-3 py-4 whitespace-nowrap text-teal-600">PDF</td>
+                                <td class="px-3 py-4 whitespace-nowrap">50 KB - 300 KB</td>
+                                <td class="px-3 py-4">If applicable.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Application Steps -->
+        <section id="steps" class="mb-10">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <svg class="w-8 h-8 text-teal-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0v-5.228a2 2 0 011.088-1.785l5.06-2.53A1 1 0 0121 4.793v14.414a1 1 0 01-1.42.923l-5.06-2.53a2 2 0 01-1.088-1.785V15z"></path></svg>
+                3. The 4-Stage Application Process
+            </h2>
+            
+            <div class="space-y-4">
+                
+                <!-- Stage 1 -->
+                <div class="bg-white p-5 rounded-xl card flex items-start border-l-4 border-indigo-400">
+                    <span class="text-3xl font-extrabold text-indigo-600 mr-4">1</span>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-1">Registration (Part 1)</h3>
+                        <p class="text-gray-600">Generate your <strong class="font-semibold">Application Number</strong> using your name, mother's name, father's name, date of birth, and valid <strong class="font-semibold">Mobile Number</strong> and <strong class="font-semibold">Email ID</strong>. Create a secure password.</p>
+                    </div>
+                </div>
+
+                <!-- Stage 2 -->
+                <div class="bg-white p-5 rounded-xl card flex items-start border-l-4 border-indigo-400">
+                    <span class="text-3xl font-extrabold text-indigo-600 mr-4">2</span>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-1">Fill Application Form (Part 2)</h3>
+                        <p class="text-gray-600">Provide all detailed personal, academic (including your 11th and 12th details using the specific NEET <strong class="font-semibold">Examination Code</strong>), and contact information. Select your preferred exam cities (usually 4 options).</p>
+                    </div>
+                </div>
+
+                <!-- Stage 3 -->
+                <div class="bg-white p-5 rounded-xl card flex items-start border-l-4 border-indigo-400">
+                    <span class="text-3xl font-extrabold text-indigo-600 mr-4">3</span>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-1">Upload Scanned Images</h3>
+                        <p class="text-gray-600">Upload all required documents: <strong class="font-semibold">Two Photographs (Passport & Postcard), Signature, Fingerprint Impression, and Class 10 Certificate</strong>. Use the specified formats and size ranges (refer to Section 2).</p>
+                    </div>
+                </div>
+
+                <!-- Stage 4 -->
+                <div class="bg-white p-5 rounded-xl card flex items-start border-l-4 border-indigo-400">
+                    <span class="text-3xl font-extrabold text-indigo-600 mr-4">4</span>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-1">Fee Payment & Confirmation</h3>
+                        <p class="text-gray-600">Pay the examination fee online. Upon successful transaction, download and <strong class="font-semibold">print the Confirmation Page</strong>. This page is your final proof of application and should be securely saved.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white p-6 mt-10">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-sm">This guide is based on established NEET UG guidelines. Please consult the <strong class="font-semibold">official NTA Information Bulletin</strong> when released for the final and authoritative rules, dates, and fee structure.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
